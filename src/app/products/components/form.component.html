@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSubmit(productForm)" #productForm="ngForm">
+    <div>
+        <input class="form-control my-2" name="name" placeholder="Name" [(ngModel)]="product.name" #name="ngModel"
+            required />
+        @if (name.invalid && (name.dirty || name.touched)) {
+        @if (description.errors!['required']) {
+        <div class="text-danger">Nombre es requerido.</div>
+        }}
+    </div>
+    <div>
+        <input class="form-control my-2" name="description" placeholder="Description" [(ngModel)]="product.description"
+            #description="ngModel" required />
+        @if (description.invalid && (description.dirty || description.touched)) {
+        @if (description.errors!['required']) {
+        <div class="text-danger">Descripción es requerido.</div>
+        }}
+    </div>
+    <div>
+        <input class="form-control my-2" type="number" name="price" placeholder="Price" [(ngModel)]="product.price"
+            #price="ngModel" required min="1" />
+        @if (price.invalid && (price.dirty || price.touched)) {
+        @if (price.errors!['required']) {
+        <div class="text-danger">Precio es requerido.</div>
+        }
+        @if (price.errors!['min']) {
+        <div class="text-danger">Precio debe ser mayor a 1.</div>
+        }
+        }
+    </div>
+    <div>
+        <button [disabled]="!productForm.form.valid" type="submit" class="btn btn-primary my-2">{{product.id > 0 ?
+            'Update' : 'Create'}}</button>
+    </div>
+</form>
