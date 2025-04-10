@@ -1,59 +1,14 @@
-# AngularApp
+# Frontend en Angular para Gestión de Productos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Este proyecto es una interfaz de usuario construida con **Angular** que interactúa con una API RESTful de gestión de productos creada con **Spring Boot**. Permite a los usuarios gestionar productos, incluyendo las operaciones de crear, leer, actualizar y eliminar productos desde una aplicación web.
 
-## Development server
+## Características
 
-To start a local development server, run:
+- Interacción con la API de gestión de productos desarrollada en **Spring Boot**.
+- Funcionalidades CRUD para la gestión de productos.
+- UI desarrollada con **Angular**.
 
-```bash
-ng serve
-```
+## Tecnologías utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Frontend**: Angular, TypeScript, HTML, CSS.
+- **Backend**: La API RESTful en **Spring Boot** (este frontend se conecta a la API ya implementada).
